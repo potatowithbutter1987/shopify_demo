@@ -5,7 +5,7 @@
       "settings": {}
     },
     "form": {
-      "type": "contact-form2",
+      "type": "contact-form",
       "settings": {
         "heading": ""
       }
