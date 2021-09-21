@@ -80,7 +80,7 @@
       <div class="gift-card__price">
         <p>
           {% if settings.currency_code_enabled %}
-            {{ gift_card.initial_value | money_with_currency }}
+            {{ gift_card.initial_value | money }}
           {% else %}
             {{ gift_card.initial_value | money }}
           {% endif %}
@@ -91,7 +91,7 @@
       </div>
 
       {% if settings.currency_code_enabled %}
-        {%- assign gift_card_balance = gift_card.balance | money_with_currency -%}
+        {%- assign gift_card_balance = gift_card.balance | money -%}
       {% else %}
         {%- assign gift_card_balance = gift_card.balance | money -%}
       {% endif %}
