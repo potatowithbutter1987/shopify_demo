@@ -6,16 +6,16 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Cat's Goods",
             "heading_size": "medium"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "All products",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -27,10 +27,11 @@
         "button"
       ],
       "settings": {
-        "adapt_height_first_image": false,
+        "image": "shopify:\/\/shop_images\/wes-hicks-qGheSe6xIVY-unsplash.jpg",
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "flex-end",
         "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 20,
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "show_text_below": true
@@ -42,21 +43,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "猫の幸せをここに",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>猫は家族円満の秘訣。<\/p><p>一緒に過ごすだけで和んだり。<\/p><p>毎日を健やかに過ごしてほしい。<\/p><p>そのためのGoodsがここにはあります。<\/p><p><\/p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "all Products",
+            "button_link": "shopify:\/\/collections",
             "button_style_secondary": false
           }
         }
@@ -93,15 +94,16 @@
         "video": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
+            "cover_image": "shopify:\/\/shop_images\/dorothea-oldani-Hhm_fL04bE8-unsplash.jpg",
+            "video_url": "",
+            "description": "",
             "image_padding": false
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "おさんぽ専用タオル",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
@@ -110,7 +112,7 @@
         "collection": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "タオル",
             "image_padding": false,
             "color_scheme": "background-1"
           }
@@ -123,17 +125,43 @@
       ],
       "settings": {
         "heading": "Multimedia collage",
-        "desktop_layout": "left",
+        "desktop_layout": "right",
         "mobile_layout": "collage"
       }
     },
-    "video": {
-      "type": "video",
+    "1633479442c454e160": {
+      "type": "image-with-text",
+      "blocks": {
+        "1633479442c454e160-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cat is Family"
+          }
+        },
+        "1633479442c454e160-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>猫の幸せを願って。<\/p><p>全ての商品を作り上げています。<\/p>"
+          }
+        },
+        "1633479442c454e160-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "All Products",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "1633479442c454e160-0",
+        "1633479442c454e160-1",
+        "1633479442c454e160-2"
+      ],
       "settings": {
-        "heading": "Video",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false
+        "image": "shopify:\/\/shop_images\/jeanie-de-klerk-bhonzdJMVjY-unsplash.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
       }
     },
     "multi_column": {
@@ -183,7 +211,7 @@
     "rich_text",
     "featured_products",
     "collage",
-    "video",
+    "1633479442c454e160",
     "multi_column"
   ]
 }
