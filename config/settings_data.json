@@ -58,14 +58,22 @@
               "heading": "Heading",
               "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
+          },
+          "805a4477-0d5e-4920-b978-4399b0606eda": {
+            "type": "text",
+            "settings": {
+              "heading": "Open date",
+              "subtext": "<p><a href=\"\/pages\/open-page\" title=\"open\">オープン予定日<\/a>はこちら。<\/p>"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "805a4477-0d5e-4920-b978-4399b0606eda"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "background-2",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": false,

@@ -170,22 +170,22 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Happiness",
+            "text": "<p>The happiness of cats is good for us.<\/p>"
           }
         },
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Brings healing",
+            "text": "<p>Existence that brings healing to everyday life.<\/p>"
           }
         },
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "title": "Live obediently",
+            "text": "<p>Both cats and us live obediently.<\/p>"
           }
         }
       },
@@ -195,14 +195,28 @@
         "column3"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Needs",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "All Products",
+        "button_link": "shopify:\/\/collections\/all",
         "swipe_on_mobile": false
+      }
+    },
+    "16336054083b4f91c8": {
+      "type": "product-flex",
+      "settings": {
+        "product": "おさんぽ専用タオル",
+        "select_radio": "right"
+      }
+    },
+    "16336938726fb87109": {
+      "type": "product-flex",
+      "settings": {
+        "product": "ひっかけタオル",
+        "select_radio": "left"
       }
     }
   },
@@ -212,6 +226,8 @@
     "featured_products",
     "collage",
     "1633479442c454e160",
-    "multi_column"
+    "multi_column",
+    "16336054083b4f91c8",
+    "16336938726fb87109"
   ]
 }

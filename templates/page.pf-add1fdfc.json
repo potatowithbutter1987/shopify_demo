@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "pf-add1fdfc": {
+      "type": "pf-add1fdfc",
+      "settings": {}
+    },
+    "163373089014e06167": {
+      "type": "product-flex",
+      "settings": {
+        "product": "ひっかけタオル",
+        "select_radio": "left"
+      }
+    },
+    "163373091255a18b33": {
+      "type": "product-flex",
+      "settings": {
+        "product": "猫が寄ってくるタオル",
+        "select_radio": "right"
+      }
+    }
+  },
+  "order": [
+    "pf-add1fdfc",
+    "163373089014e06167",
+    "163373091255a18b33"
+  ]
+}

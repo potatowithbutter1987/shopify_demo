@@ -1,0 +1,85 @@
+<section>
+  {%- assign radio = section.settings.select_radio -%}
+  <div class="image-with-text page-width pickup">
+    {%- assign prd = section.settings.product -%}
+    <a href="{{ prd.url }}" >
+        <img
+          srcset="{%- if prd.featured_image.width >= 550 -%}{{ prd.featured_image | img_url: '550x' }} 550w,{%- endif -%}
+            {%- if prd.featured_image.width >= 720 -%}{{ prd.featured_image | img_url: '720x' }} 720w,{%- endif -%}
+            {%- if prd.featured_image.width >= 990 -%}{{ prd.featured_image | img_url: '990x' }} 990w,{%- endif -%}
+            {%- if prd.featured_image.width >= 1100 -%}{{ prd.featured_image | img_url: '1100x' }} 1100w,{%- endif -%}
+            {%- if prd.featured_image.width >= 1500 -%}{{ prd.featured_image | img_url: '1500x' }} 1500w,{%- endif -%}
+            {%- if prd.featured_image.width >= 2200 -%}{{ prd.featured_image | img_url: '2200x' }} 2200w,{%- endif -%}
+            {%- if prd.featured_image.width >= 3000 -%}{{ prd.featured_image | img_url: '3000x' }} 3000w,{%- endif -%}"
+          src="{{ prd.featured_image | img_url: '1500x' }}"
+          sizes="(min-width: 1200px) calc((1200px - 10rem) / 2), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+          loading="lazy"
+          max-width="576"
+          max-height="{{ 576 | divided_by: media.preview_image.aspect_ratio }}"
+          class="collage-card__image"
+        >
+    </a>
+    <div  class="{% if radio == 'left' %} pickup-column1 {% endif %} {% if radio == 'right' %} pickup-column2 {% endif %}" style="padding: 50px;">
+      <h2 style="text-align: left;">{{ prd.title }}</h2>
+      <p>{{ prd.description }}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.pickup {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 20px;
+}
+.pickup-column2 {
+   grid-row: 1;
+   grid-column: 1;
+}
+@media screen and (max-width: 750px) {
+  .pickup {
+    display: block;
+    grid-template-columns: initial;
+    grid-column-gap: initial;
+  }
+  .pickup img {
+    width: 100%;
+  }
+  .pickup-column1 {
+    grid-column: 1;
+  } 
+ .pickup-column2 {
+    grid-row: initial;
+    grid-column: 1;
+  } 
+}
+</style>
+
+{% schema %}
+{
+  "name": "商品紹介",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "商品",
+      "info": "info"
+    },
+    {
+      "type": "radio",
+      "id": "select_radio",
+      "label": "左・右",
+      "options": [
+        { "value": "left", "label": "左"},
+        { "value": "right", "label": "右a"}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "商品紹介",
+      "category": "商品カテゴリー"
+    }
+  ]
+}
+{% endschema %}
