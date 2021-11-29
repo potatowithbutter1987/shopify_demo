@@ -2,9 +2,7 @@
 
 https://test-web-site-a.myshopify.com/
 
-# admin site
-
-https://test-web-site-a.myshopify.com/admin/themes
+password : demo
 
 # git repository
 
